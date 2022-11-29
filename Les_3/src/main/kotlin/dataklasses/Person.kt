@@ -44,9 +44,11 @@ class Student(firstName: String, lastName: String, age: Int) : Person(firstName,
     }
 }
 
-class Course(val name: String = "Application Development"){
+class Course( val name: String = "Application Development"){
     var credits : Int = 0
-
+    init{
+        println(name)
+    }
     constructor(name: String, credits: Int):this(name){
         this.credits = credits
     }
@@ -59,7 +61,7 @@ fun main() {
     val cursus = Course("Mobile development")
     val cursus2 = Course()
     val cursus3 = Course("Database essentials", 4)
-
+    cursus.name
     cursus.credits = 8
 
     println("persoon: ${persoon.myFirstName} ${persoon.myLastName} ${persoon.myAge}")

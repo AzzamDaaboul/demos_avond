@@ -1,3 +1,5 @@
+import dataklasses.Person
+
 object Calculator {
     fun add(x: Int, y: Int) = x+y
     fun divide(x:Int, y: Int) = x/y
