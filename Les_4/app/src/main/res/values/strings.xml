@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Les_4</string>
+    <string name="hello_odisee">Hello Odisee!</string>
+    <string name="hallo">hallo</string>
+    <string name="generate_numbers">Generate numbers</string>
+    <string name="demo_text">Er is op de button geklikt</string>
+    <string name="numbers_text">De geselecteerde nummers zijn: %s</string>
+    <string name="stars_text">De geselecteerde sterren zijn: %s</string>
+</resources>
