@@ -12,7 +12,7 @@ class PersonageAdapter(val itemClicked: (Int) -> Unit) :
     ListAdapter<Personage, PersonageAdapter.PersonageViewHolder>(PersonageDiffUtil()) {
 
     class PersonageViewHolder(val view: View) : ViewHolder(view) {
-        val nameTextView = view.findViewById<TextView>(R.id.name)
+        val nameTextView: TextView = view.findViewById<TextView>(R.id.name)
     }
 
     class PersonageDiffUtil : DiffUtil.ItemCallback<Personage>() {
@@ -35,6 +35,7 @@ class PersonageAdapter(val itemClicked: (Int) -> Unit) :
     override fun onBindViewHolder(holder: PersonageViewHolder, position: Int) {
         holder.nameTextView.text = getItem(position).fullName
         val id = getItem(position).id
+
 
         holder.view.setOnClickListener {
             itemClicked(id)
